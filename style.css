@@ -1,0 +1,445 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4; /* Fundo mais claro */
+    margin: 0;
+}
+
+.selectConfig {
+    width: 100%;
+    padding: 4px 6px 6px 6px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.selectConfig:hover {
+    border-color: #007bff;
+}
+
+.selectConfig:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+    outline: none;
+}
+
+
+
+.page-link {
+    background-color: #388e3c !important;
+}
+
+.tituloTabela{
+    font-weight:500;
+}
+
+.ativo{
+    border-color:red!important;
+}
+
+tr .id{
+    width: 2%;
+}
+
+tr .descricao{
+    width: 20%;
+}
+
+tr .generico{
+    width:10% ;
+}
+
+tr .checkBoxTbl{
+    width:2% ;
+}
+
+#corpoTabela td{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5)!important;
+    border-right:1px solid rgba(0, 0, 0, 0.1)!important;
+    border-left:1px solid rgba(0, 0, 0, 0.1)!important;
+}
+
+/* Ajusta a UL para que ela não ocupe o espaço todo */
+.pagination {
+    display: flex!important;
+    justify-content: center!important;
+    margin-bottom: 0!important;
+    padding: 0!important;
+    width: 50px!important;
+
+}
+
+
+
+/* Definir a cor dos links */
+.page-link {
+    color: #f4f4f4 !important;
+}
+
+/* Alterar a cor ao passar o mouse (hover) */
+.page-link:hover {
+    color: #007bff !important; /* Você pode mudar essa cor para o que preferir */
+}
+
+
+.pagination, .pagination-container{
+    margin:auto;
+    margin-left: 42%;
+}
+
+#container {
+    width: 95%;
+    background-color: #388e3c; /* Fundo mais claro para o container */
+    padding: min(20px,5px);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras mais sutis */
+}
+
+.titulo {
+    background-color: #4CAF50; /* Verde suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombras mais sutis */
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;
+    border-radius: 5px;
+    border: 3px solid rgba(221, 221, 221, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    padding-bottom: 1px;
+}
+
+
+
+.titulo p {
+    color:#fff;
+    padding: min(10px,5px);
+}
+
+
+
+.titulo_menu{
+    display: flex;
+    background-color: aqua;
+    text-align: left;
+}
+
+#Menu{
+    display: flex;
+    flex-direction: row; /* Garante que os itens fiquem alinhados horizontalmente */
+    background-color: #388E3C; /* Cor única para o menu, um verde mais escuro */
+    font-size: 20px;
+    color: #fff;
+    padding: 05px 0;
+    border-radius: 5px; /* Bordas arredondadas para dar um efeito suave */
+    width: 100%;
+}
+
+
+
+#Menu {
+    display: flex;
+   
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#removeLinha{
+    margin-left:85px;
+}
+
+.linha :hover{
+ cursor: pointer;
+}
+
+#Menu input{
+    border-radius:10px;
+}
+
+
+
+#titulo_inicial {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.linhaBTN {
+    border: none;
+    padding: 7px 11px;
+    font-size: 10px;
+    text-transform: uppercase;
+    border-radius: 10px!important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.linhaBTN:hover {
+    transform: scale(1.05);
+}
+
+.page-item.ativo  {
+    font-weight: bold;
+}
+
+.linhaBTN:active {
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+
+#tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    border-spacing: 0;
+    border: 3px solid rgba(221, 221, 221, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+.tituloTabela {
+    text-align: left;
+    padding: 5px;
+    font-size:18px;
+    font-weight: 100;
+    background-color: #4CAF50; 
+    color:#fff;
+    border: 2px solid rgba(221, 221, 221, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+.checkBoxTbl input[type="checkbox"] {
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #4CAF50; 
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+
+.checkBoxTbl input[type="checkbox"]:checked {
+    background-color: #4CAF50; 
+    border-color: #4CAF50; 
+}
+
+
+
+.checkBoxTbl input[type="checkbox"]:checked::before {
+    content: '\2713'; 
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    top: -4px;
+    left: 2px;
+}
+
+#selecionarTudo{
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+#selecionarTudo i{
+    font-size: 20px; /* Tamanho do ícone */
+    color: #fff;
+}
+
+.checkBoxTbl input[type="checkbox"]:hover {
+    border-color: #388E3C; 
+}
+
+
+.checkBoxTbl input[type="checkbox"] + label {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.checkBoxTbl{
+    text-align: center;
+}
+
+.chkbTitulo{
+    text-align: center;
+}
+
+.conteudoTabela {
+    border: 2px solid rgba(221, 221, 221, 0.5); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    padding: min(2px,5px);
+    color: #333; 
+    background-color: #f9f9f9;
+    text-indent: 1px;  
+}
+
+tr:nth-child(even) {
+    background-color: #f1f1f1; 
+}
+
+#rodape{
+    background-color: #4CAF50;
+}
+
+tr:hover {
+    background-color: #e2e2e2; 
+}
+
+.pesquisar{
+    padding: min(2px,5px);
+}
+
+#colorPickerFundo {
+    width: 60px;  
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#colorPickerFundo::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 3px; /* Esse define a espessura da borda */
+    background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, purple, pink);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    cursor:crosshair;
+}
+
+
+#colorPickerFundo{
+    padding:0;
+}
+
+#colorPickerFundo::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+#colorPickerFundo::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+/* Para Firefox */
+#colorPickerFundo::-moz-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+#colorPickerFundo:hover {
+    box-shadow: 0px 0px 10px rgba(2, 231, 248, 0.6);
+}
+
+#colorPickerFundo {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+#colorPickerFonte {
+    width: 60px;  
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#colorPickerFonte::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 3px; /* Esse define a espessura da borda */
+    background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, purple, pink);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    cursor:crosshair;
+}
+
+#colorPickerFonte{
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+#colorPickerFonte:hover{
+    box-shadow: 0px 0px 10px rgba(0, 231, 248, 0.6);
+}
+
+#colorPickerFonte{
+    padding:0;
+}
+
+#colorPickerFonte::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+#colorPickerFonte::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+/* Para Firefox */
+#colorPickerFonte::-moz-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+/* color picker detalhes */
+#colorPickerDetalhes {
+    width: 60px;  
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+
+#colorPickerDetalhes::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    padding: 3px; /* Esse define a espessura da borda */
+    background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, purple, pink);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    cursor:crosshair;
+}
+
+#colorPickerDetalhes{
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+#colorPickerDetalhes:hover{
+    box-shadow: 0px 0px 10px rgba(0, 231, 248, 0.6);
+}
+
+#colorPickerDetalhes{
+    padding:0;
+}
+
+#colorPickerDetalhes::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 50%;
+}
+
+#colorPickerDetalhes::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+/* Para Firefox */
+#colorPickerDetalhes::-moz-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+
